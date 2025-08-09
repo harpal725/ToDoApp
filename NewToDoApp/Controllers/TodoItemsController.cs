@@ -107,7 +107,7 @@ namespace NewToDoApp.Controllers
         // Define an async method that takes a long parameter named id and returns an IActionResult
         public async Task<IActionResult> DeleteTodoItem(long id)
         {
-            // Find a todo item by its id from the database as an asynchronous operation
+            // Find a todo item by its id from the database as an asynchronous operation 
             var todoItem = await _context.TodoItems.FindAsync(id);
 
             // If the todo item is not found, return a 404 Not Found response
